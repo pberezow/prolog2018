@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl"
+		pwp:ask="ensure_loaded(queens)">
+<head>
+	<meta charset="utf-8" />
+	<title>Queens</title>
+	<meta name="generator" content="BBEdit 11.5" />
+</head>
+<body pwp:ask="size(Size), once(queens(Size, P))">
+
+	<h1>Queens problem</h1>
+
+	<h2>
+		Solution for N = <span pwp:use="Size"/>.
+	</h2>
+
+	<table>
+		<tr pwp:ask="member(Row, P)">
+			<td pwp:ask="between(1, Size, Value)">
+				<img pwp:ask="Row = Value" src="pic/queen.png"/>
+				<img pwp:ask="\+Row = Value" src="pic/empty.png"/>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
